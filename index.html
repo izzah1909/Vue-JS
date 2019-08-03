@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Vue App</title>
+        <style>
+            #name {
+                color:rgb(60, 0, 128);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="firstSection">
+            <input v-model="newMenuItem"><br/>
+            Hello <em id="name"><strong>Izzah</strong></em>, this is my first time in Vue.<br/>
+            My lunch menu for today:
+            <ul>
+                <li v-for="menuItem in lunchMenu">{{menuItem}}</li>
+            </ul>
+            <button v-on:click="addMenuItem">Click Me!!</button>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue.js"></script>
+    </body>
+</html>
